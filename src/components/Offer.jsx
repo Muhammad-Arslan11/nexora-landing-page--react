@@ -15,7 +15,7 @@ function Offer() {
   return (
     <div
       id="services"
-      className="w-full felx felx-col justify-between items-center lg:px-[80px] px-[20px] lg:py-[80px] py-[60px] gap-[20px]"
+      className="w-full flex flex-col justify-between items-center lg:px-[80px] px-[20px] lg:py-[80px] py-[60px] gap-[20px]"
     >
       <h1
         data-aos="zoom-in"
