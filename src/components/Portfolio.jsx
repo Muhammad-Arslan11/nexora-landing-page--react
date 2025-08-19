@@ -51,7 +51,7 @@ function Portfolio() {
           return (
             <div
               key={index}
-              className="w-full flex flex-col items-center justify-start gap-4 p-10 border-2 border-gray-200 bg-white  rounded-md hover:cursor-pointer"
+              className="w-full flex flex-col items-center justify-start gap-4 p-10 border-2 border-gray-200 bg-white  rounded-md hover:cursor-pointer transition-all duration-500 ease-in-out transform hover:scale-102"
             >
               <img
                 src={project.img}

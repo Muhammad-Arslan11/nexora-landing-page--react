@@ -23,7 +23,7 @@ function CTA() {
       <h1
         data-aos="zoom-in"
         data-aos-delay="50"
-        className="text-emerald-400 uppercase text-sm font-poppins"
+        className="text-emerald-400 uppercase text-sm font-poppins lg:text-2xl"
       >
         Ready To Get Started
       </h1>

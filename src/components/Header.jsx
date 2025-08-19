@@ -10,9 +10,9 @@ function Header() {
     { name: "Home", to: "home" },
     { name: "About", to: "about" },
     { name: "Services", to: "services" },
-    { name: "Projects", to: "projects" },
-    { name: "Testimonials", to: "testimonials" },
-    { name: "Contact", to: "contact" },
+    { name: "Projects", to: "portfolio" },
+    { name: "Testimonials", to: "reviews" },
+    { name: "Contact", to: "contacts" },
   ];
 
   useEffect(() => {
@@ -66,10 +66,10 @@ function Header() {
       </div>
 
       {/* mobile menu full screen */}
-      <div className={`w-full h-full fixed top-0 left-0 bg-black text-white transform ${menuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out flex items-center justify-center overflow-y-hidden`}>
-        <IoCloseSharp className="fixed top-3 right-6 text-3xl cursor-pointer" onClick={()=> setOpenMenu(false)}/>
+      <div className={` w-full h-full fixed top-0 left-0 bg-black text-white transform ${menuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out flex items-center justify-center overflow-y-hidden`}>
+        <IoCloseSharp className="fixed top-3 right-6 text-3xl cursor-pointer" onClick={()=> setMenuOpen(false)}/>
 
-          <ul className="flex space-y-6 text-2xl font-poppins text-center">
+          <ul className="flex flex-col space-y-6 text-2xl font-poppins text-center">
             {menuLinks.map((link) => (
               <li key={link.to}>
                 <ScrollLink

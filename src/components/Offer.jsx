@@ -27,7 +27,7 @@ function Offer() {
       <h1
         data-aos="zoom-in"
         data-aos-delay="100"
-        className="text-black lg:text-[45px] text-[30px] leading-[1.2em] capitalize font-poppins lg:w-[50%]"
+        className="text-black text-center lg:text-[45px] text-[30px] leading-[1.2em] capitalize font-poppins lg:w-[50%]"
       >
         Driving Digital Transformation with Excellence
       </h1>
@@ -41,12 +41,13 @@ function Offer() {
         saepe modi?
       </p>
 
-      <div className="w-full grid lg:grid-cols-4 gird-cols-1 justify-center items-center gap-6 mt-6">
+      <div className="w-full grid lg:grid-cols-3 gird-cols-1 justify-center items-center gap-6 mt-6">
         {services.map((service, index) => {
           return (
             <div
               key={index}
-              className="flex flex-col items-start justify-center gap-4 p-10 border-2 border-gray-200 bg-white hover:bg:green-200 rounded-md hover:cursor-pointer"
+             className="flex flex-col items-start justify-center gap-4 p-10 border-2 border-gray-200 bg-white hover:bg-green-200 rounded-md hover:cursor-pointer transition-all duration-500 ease-in-out transform hover:scale-102"
+
             >
               {<service.icon className="size-[35px] mb-5" />}
               <h1 className="text-black text-[25px] leading-[1.2em] capitalize font-poppins">
